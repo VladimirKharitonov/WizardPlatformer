@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://drvgghqxos41y"]
+
+[ext_resource type="Texture2D" uid="uid://cfwh6ddjas6rw" path="res://assets/location/decorations/Mossy - Decorations&Hazards.png" id="1_bxola"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d45ym"]
+atlas = ExtResource("1_bxola")
+region = Rect2(125, 962, 1473, 626)
+
+[node name="Branch1" type="StaticBody2D"]
+position = Vector2(1, -255)
+scale = Vector2(0.8, 0.8)
+collision_mask = 6
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 160)
+scale = Vector2(0.5, 0.5)
+texture = SubResource("AtlasTexture_d45ym")
+metadata/_edit_lock_ = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
+polygon = PackedVector2Array(-316, 108, -296, 124, -260, 148, -236, 76, -228, 164, -200, 172, -168, 120, -176, 176, -148, 160, -140, 144, -124, 136, -116, 136, -108, 136, -156, 60, -80, 112, -72, 104, -92, 48, -56, 92, -40, 80, -36, 68, -28, 64, -28, 4, 0, 68, 16, 68, 24, 36, 32, 68, 40, 68, 72, 12, 64, 72, 84, 80, 160, 8, 164, 12, 116, 100, 140, 120, 152, 120, 164, 132, 188, 92, 192, 96, 176, 172, 200, 188, 204, 156, 216, 188, 240, 116, 244, 120, 244, 196, 280, 196, 312, 132, 304, 196, 356, 204, 368, 232, 340, 268, 332, 272, 268, 268, 272, 304, 248, 268, 240, 264, 232, 316, 216, 264, 176, 252, 140, 296, 156, 244, 152, 240, 92, 272, 132, 224, 112, 208, 72, 236, 96, 200, 80, 164, 56, 160, 16, 196, 40, 140, 12, 136, -20, 156, -24, 172, -40, 184, -56, 188, -24, 228, -76, 200, -88, 216, -64, 288, -112, 228, -136, 240, -144, 248, -156, 256, -176, 244, -204, 240, -220, 296, -228, 236, -244, 232, -300, 288, -272, 220, -364, 168, -368, 156, -352, 128, -328, 112)
+metadata/_edit_lock_ = true

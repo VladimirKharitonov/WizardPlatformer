@@ -1,0 +1,212 @@
+[gd_scene load_steps=35 format=3 uid="uid://c20vg2dmfwej6"]
+
+[ext_resource type="Script" path="res://enemies/orange_slime/orange_slime.gd" id="1_qb0kw"]
+[ext_resource type="Texture2D" uid="uid://cdcgr7sa0ri6e" path="res://assets/enemies/orange_slime/SlimeOrange_00000.png" id="1_yil3m"]
+[ext_resource type="Texture2D" uid="uid://bub8olqqpyfhf" path="res://assets/enemies/orange_slime/SlimeOrange_00001.png" id="2_3qv01"]
+[ext_resource type="Texture2D" uid="uid://dsyk2nkvq6s3s" path="res://assets/enemies/orange_slime/SlimeOrange_00002.png" id="3_srrga"]
+[ext_resource type="Texture2D" uid="uid://dghl0tsvwuqun" path="res://assets/enemies/orange_slime/SlimeOrange_00003.png" id="4_0omqm"]
+[ext_resource type="Texture2D" uid="uid://cm36cvqf83hu5" path="res://assets/enemies/orange_slime/SlimeOrange_00004.png" id="5_m8vxb"]
+[ext_resource type="Texture2D" uid="uid://cvakckrodpaiu" path="res://assets/enemies/orange_slime/SlimeOrange_00005.png" id="6_23w60"]
+[ext_resource type="Texture2D" uid="uid://h485bdx5qbb1" path="res://assets/enemies/orange_slime/SlimeOrange_00006.png" id="7_nim2n"]
+[ext_resource type="Texture2D" uid="uid://dh3wlua1w7pi7" path="res://assets/enemies/orange_slime/SlimeOrange_00007.png" id="8_msvnq"]
+[ext_resource type="Texture2D" uid="uid://bkcr448ygxgaj" path="res://assets/enemies/orange_slime/SlimeOrange_00008.png" id="9_g55db"]
+[ext_resource type="Texture2D" uid="uid://bnkqv4hqj1xb0" path="res://assets/enemies/orange_slime/SlimeOrange_00009.png" id="10_7yl2j"]
+[ext_resource type="Texture2D" uid="uid://s0n5yyiceeps" path="res://assets/enemies/orange_slime/SlimeOrange_00010.png" id="11_5hgts"]
+[ext_resource type="Texture2D" uid="uid://blmykff7ysu2p" path="res://assets/enemies/orange_slime/SlimeOrange_00011.png" id="12_nutye"]
+[ext_resource type="Texture2D" uid="uid://2l7px1upac36" path="res://assets/enemies/orange_slime/SlimeOrange_00012.png" id="13_tawkd"]
+[ext_resource type="Texture2D" uid="uid://bk1fexbd7xmbu" path="res://assets/enemies/orange_slime/SlimeOrange_00013.png" id="14_st3wh"]
+[ext_resource type="Texture2D" uid="uid://b6nkutr17tka1" path="res://assets/enemies/orange_slime/SlimeOrange_00014.png" id="15_6mx47"]
+[ext_resource type="Texture2D" uid="uid://dc71udngop58n" path="res://assets/enemies/orange_slime/SlimeOrange_00015.png" id="16_j1f1n"]
+[ext_resource type="Texture2D" uid="uid://dbgyr5eq4ba1t" path="res://assets/enemies/orange_slime/SlimeOrange_00016.png" id="17_fvaqu"]
+[ext_resource type="Texture2D" uid="uid://cwfyr1uh8nvqy" path="res://assets/enemies/orange_slime/SlimeOrange_00017.png" id="18_vnf4i"]
+[ext_resource type="Texture2D" uid="uid://dx7jq37a8akia" path="res://assets/enemies/orange_slime/SlimeOrange_00018.png" id="19_4cv3m"]
+[ext_resource type="Texture2D" uid="uid://dti1crdg05umh" path="res://assets/enemies/orange_slime/SlimeOrange_00019.png" id="20_uc6x0"]
+[ext_resource type="Texture2D" uid="uid://cftdfvoilkb6j" path="res://assets/enemies/orange_slime/SlimeOrange_00020.png" id="21_r3o3b"]
+[ext_resource type="Texture2D" uid="uid://cbv32gq1sw1mj" path="res://assets/enemies/orange_slime/SlimeOrange_00021.png" id="22_fgpkm"]
+[ext_resource type="Texture2D" uid="uid://pcuopk5wdgr1" path="res://assets/enemies/orange_slime/SlimeOrange_00022.png" id="23_cwn8f"]
+[ext_resource type="Texture2D" uid="uid://duaooucjh212m" path="res://assets/enemies/orange_slime/SlimeOrange_00023.png" id="24_nchrj"]
+[ext_resource type="Texture2D" uid="uid://buecoowtwlvoc" path="res://assets/enemies/orange_slime/SlimeOrange_00024.png" id="25_fnkb3"]
+[ext_resource type="Texture2D" uid="uid://dmd5p4dlnbt15" path="res://assets/enemies/orange_slime/SlimeOrange_00025.png" id="26_a3yr0"]
+[ext_resource type="Texture2D" uid="uid://cyxjqwodld67g" path="res://assets/enemies/orange_slime/SlimeOrange_00026.png" id="27_731yo"]
+[ext_resource type="Texture2D" uid="uid://c4s8gyrhesvq2" path="res://assets/enemies/orange_slime/SlimeOrange_00027.png" id="28_ba32w"]
+[ext_resource type="Texture2D" uid="uid://c1orpusqa0s44" path="res://assets/enemies/orange_slime/SlimeOrange_00028.png" id="29_yv8e7"]
+[ext_resource type="Texture2D" uid="uid://bu6ib06bsbadq" path="res://assets/enemies/orange_slime/SlimeOrange_00029.png" id="30_ouf87"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wbfka"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_yil3m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_3qv01")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_srrga")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0omqm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_m8vxb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_23w60")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_nim2n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_msvnq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_g55db")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_7yl2j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_5hgts")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_nutye")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_tawkd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_st3wh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_6mx47")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_j1f1n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_fvaqu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_vnf4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_4cv3m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_uc6x0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_r3o3b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_fgpkm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_cwn8f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_nchrj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_fnkb3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_a3yr0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_731yo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_ba32w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_yv8e7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_ouf87")
+}],
+"loop": true,
+"name": &"wandering",
+"speed": 15.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3jqle"]
+size = Vector2(2000, 500)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fyhso"]
+size = Vector2(1300, 300)
+
+[node name="OrangeSlime" type="CharacterBody2D"]
+scale = Vector2(0.3, 0.3)
+collision_layer = 4
+collision_mask = 7
+script = ExtResource("1_qb0kw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(0.9, 0.9)
+sprite_frames = SubResource("SpriteFrames_wbfka")
+animation = &"wandering"
+frame = 15
+frame_progress = 0.220364
+metadata/_edit_lock_ = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+visible = false
+scale = Vector2(0.9, 0.9)
+polygon = PackedVector2Array(86, 122, 139, 91, 151, 58, 188, 74, 194, 60, 153, 34, 135, -3, 108, -35, 129, -58, 148, -67, 171, -107, 157, -121, 133, -102, 68, -60, 41, -68, 52, -92, 46, -110, 34, -108, 27, -88, 17, -71, -20, -68, -56, -56, -82, -71, -85, -65, -77, -48, -86, -42, -132, -45, -161, -41, -195, -60, -206, -57, -179, -28, -118, -7, -135, 25, -136, 51, -166, 76, -160, 94, -125, 82, -68, 121)
+metadata/_edit_lock_ = true
+
+[node name="TimerWandering" type="Timer" parent="."]
+one_shot = true
+
+[node name="TimerIdle" type="Timer" parent="."]
+one_shot = true
+
+[node name="ExitArea" type="Area2D" parent="."]
+visible = false
+collision_layer = 4
+collision_mask = 2
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitArea"]
+shape = SubResource("RectangleShape2D_3jqle")
+metadata/_edit_lock_ = true
+
+[node name="DetectedArea" type="Area2D" parent="."]
+visible = false
+collision_layer = 4
+collision_mask = 2
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectedArea"]
+shape = SubResource("RectangleShape2D_fyhso")
+metadata/_edit_lock_ = true
+
+[node name="RayCastLDown" type="RayCast2D" parent="."]
+position = Vector2(-130, 30)
+target_position = Vector2(0, 150)
+metadata/_edit_lock_ = true
+
+[node name="RayCastRDown" type="RayCast2D" parent="."]
+position = Vector2(140, 30)
+target_position = Vector2(0, 150)
+metadata/_edit_lock_ = true
+
+[node name="RayCastL" type="RayCast2D" parent="."]
+position = Vector2(-130, 30)
+rotation = 1.5708
+target_position = Vector2(0, 85)
+collision_mask = 5
+metadata/_edit_lock_ = true
+
+[node name="RayCastR" type="RayCast2D" parent="."]
+position = Vector2(140, 30)
+rotation = -1.5708
+target_position = Vector2(0, 85)
+collision_mask = 5
+metadata/_edit_lock_ = true
+
+[connection signal="timeout" from="TimerWandering" to="." method="_on_timer_wandering_timeout"]
+[connection signal="timeout" from="TimerIdle" to="." method="_on_timer_idle_timeout"]
+[connection signal="body_exited" from="ExitArea" to="." method="_on_exit_area_body_exited"]
+[connection signal="body_entered" from="DetectedArea" to="." method="_on_detected_area_body_entered"]

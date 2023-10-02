@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfw6h7eyjeasa"]
+
+[ext_resource type="Texture2D" uid="uid://dpa1vx3jfqb3u" path="res://assets/location/decorations/Mossy - MossyHills.png" id="1_373ec"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h57c0"]
+atlas = ExtResource("1_373ec")
+region = Rect2(647, 616, 1239, 857)
+
+[node name="Ground2" type="Sprite2D"]
+texture = SubResource("AtlasTexture_h57c0")
+offset = Vector2(0, -428)

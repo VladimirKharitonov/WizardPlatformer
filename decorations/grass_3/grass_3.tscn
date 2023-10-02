@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://nidjvoyum0x7"]
+
+[ext_resource type="Texture2D" uid="uid://cfwh6ddjas6rw" path="res://assets/location/decorations/Mossy - Decorations&Hazards.png" id="1_5fdpr"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7e08t"]
+atlas = ExtResource("1_5fdpr")
+region = Rect2(87, 3077, 335, 440)
+
+[node name="Grass3" type="Sprite2D"]
+scale = Vector2(0.25, 0.25)
+texture = SubResource("AtlasTexture_7e08t")
+offset = Vector2(0, -220)

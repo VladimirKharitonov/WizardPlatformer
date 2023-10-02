@@ -1,0 +1,151 @@
+[gd_scene load_steps=13 format=3 uid="uid://dyi05qembfsa2"]
+
+[ext_resource type="Script" path="res://menus/main_menu/main_menu.gd" id="1_3ln3k"]
+[ext_resource type="Texture2D" uid="uid://c4kdlkv0f8iac" path="res://assets/location/parallax_background/10_Sky.png" id="2_j00si"]
+[ext_resource type="Texture2D" uid="uid://ce0xkc2webj0c" path="res://assets/location/parallax_background/09_Forest.png" id="3_0bv5a"]
+[ext_resource type="Texture2D" uid="uid://d0cq4tkyuewde" path="res://assets/location/parallax_background/08_Forest.png" id="4_0nwxs"]
+[ext_resource type="Texture2D" uid="uid://ci47yuloho4qf" path="res://assets/location/parallax_background/07_Forest.png" id="5_0gs34"]
+[ext_resource type="Texture2D" uid="uid://ctdmb6srnsj0l" path="res://assets/location/parallax_background/06_Forest.png" id="6_cdsqt"]
+[ext_resource type="Texture2D" uid="uid://b4sb4ausgde8" path="res://assets/location/parallax_background/05_Particles.png" id="7_ydbtv"]
+[ext_resource type="Texture2D" uid="uid://d1vng6ne3j882" path="res://assets/location/parallax_background/04_Forest.png" id="8_4n5v0"]
+[ext_resource type="Texture2D" uid="uid://buk7s8bc2eh8x" path="res://assets/location/parallax_background/03_Particles.png" id="9_bb6he"]
+[ext_resource type="Texture2D" uid="uid://cchw7eykjiyru" path="res://assets/location/parallax_background/02_Bushes.png" id="10_0m7lh"]
+[ext_resource type="Texture2D" uid="uid://dmjiply0owx14" path="res://assets/location/parallax_background/01_Mist.png" id="11_6tcpu"]
+[ext_resource type="Theme" uid="uid://co1jw7a3ebl4p" path="res://fonts/ANDYB/ANDYB_theme.tres" id="12_bvrr3"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3ln3k")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="CanvasLayer"]
+scroll_ignore_camera_zoom = true
+
+[node name="10_Sky" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/10_Sky"]
+texture = ExtResource("2_j00si")
+centered = false
+
+[node name="09_Forest" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
+motion_scale = Vector2(0.05, 1)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/09_Forest"]
+texture = ExtResource("3_0bv5a")
+centered = false
+
+[node name="08_Forest" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
+motion_scale = Vector2(0.1, 1)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/08_Forest"]
+texture = ExtResource("4_0nwxs")
+centered = false
+
+[node name="07_Forest" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
+motion_scale = Vector2(0.2, 1)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/07_Forest"]
+texture = ExtResource("5_0gs34")
+centered = false
+
+[node name="06_Forest" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
+motion_scale = Vector2(0.3, 1)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/06_Forest"]
+texture = ExtResource("6_cdsqt")
+centered = false
+
+[node name="05_Particles" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
+motion_scale = Vector2(0.5, 1)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/05_Particles"]
+texture = ExtResource("7_ydbtv")
+centered = false
+
+[node name="04_Forest" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
+motion_scale = Vector2(0.6, 1)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/04_Forest"]
+texture = ExtResource("8_4n5v0")
+centered = false
+
+[node name="03_Particles" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
+motion_scale = Vector2(0.9, 1)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/03_Particles"]
+texture = ExtResource("9_bb6he")
+centered = false
+
+[node name="02_Bushes" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
+motion_scale = Vector2(0.8, 1)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/02_Bushes"]
+texture = ExtResource("10_0m7lh")
+centered = false
+
+[node name="01_Mist" type="ParallaxLayer" parent="CanvasLayer/ParallaxBackground"]
+motion_scale = Vector2(0.85, 1)
+motion_mirroring = Vector2(1920, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/ParallaxBackground/01_Mist"]
+texture = ExtResource("11_6tcpu")
+centered = false
+
+[node name="Main" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 300
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 300
+theme_override_constants/margin_bottom = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Main"]
+modulate = Color(0, 0, 0.235294, 1)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("12_bvrr3")
+
+[node name="PlayButton" type="Button" parent="Main/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.227451, 0.45098, 1, 1)
+theme_override_colors/font_focus_color = Color(0.333333, 0.537255, 1, 1)
+action_mode = 0
+text = "play"
+flat = true
+
+[node name="SettingsButton" type="Button" parent="Main/VBoxContainer"]
+layout_mode = 2
+action_mode = 0
+text = "settings"
+flat = true
+
+[node name="ExitButton" type="Button" parent="Main/VBoxContainer"]
+layout_mode = 2
+action_mode = 0
+text = "exit"
+flat = true
+
+[connection signal="button_up" from="Main/VBoxContainer/PlayButton" to="Main/VBoxContainer/PlayButton" method="_is_PlayButton_up"]
+[connection signal="pressed" from="Main/VBoxContainer/PlayButton" to="." method="_PlayButton_pressed"]
+[connection signal="pressed" from="Main/VBoxContainer/SettingsButton" to="." method="_SettingsButton_pressed"]
+[connection signal="pressed" from="Main/VBoxContainer/ExitButton" to="." method="_ExitButton_pressed"]

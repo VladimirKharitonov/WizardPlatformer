@@ -1,0 +1,210 @@
+[gd_scene load_steps=35 format=3 uid="uid://wtnkcexvp4te"]
+
+[ext_resource type="Texture2D" uid="uid://cyugaqmbtxcgb" path="res://assets/enemies/green_slime/SlimeBasic_00000.png" id="1_k6efq"]
+[ext_resource type="Script" path="res://enemies/green_slime/green_slime.gd" id="1_lp52r"]
+[ext_resource type="Texture2D" uid="uid://cd746ljg7hw00" path="res://assets/enemies/green_slime/SlimeBasic_00001.png" id="2_s0u8x"]
+[ext_resource type="Texture2D" uid="uid://dhx6wudq8bjii" path="res://assets/enemies/green_slime/SlimeBasic_00002.png" id="3_5ni7c"]
+[ext_resource type="Texture2D" uid="uid://dcs7hutv0jwj6" path="res://assets/enemies/green_slime/SlimeBasic_00003.png" id="4_hyq7x"]
+[ext_resource type="Texture2D" uid="uid://c03pcxj56tj8m" path="res://assets/enemies/green_slime/SlimeBasic_00004.png" id="5_v0nt6"]
+[ext_resource type="Texture2D" uid="uid://dp5tmk8of0bb2" path="res://assets/enemies/green_slime/SlimeBasic_00005.png" id="6_m38qm"]
+[ext_resource type="Texture2D" uid="uid://pvnbkvjc4wtj" path="res://assets/enemies/green_slime/SlimeBasic_00006.png" id="7_hhdu6"]
+[ext_resource type="Texture2D" uid="uid://dphxje8lp14xs" path="res://assets/enemies/green_slime/SlimeBasic_00007.png" id="8_grn3n"]
+[ext_resource type="Texture2D" uid="uid://cgudtjdwb58sl" path="res://assets/enemies/green_slime/SlimeBasic_00008.png" id="9_e6l8c"]
+[ext_resource type="Texture2D" uid="uid://bh34eohd8rf32" path="res://assets/enemies/green_slime/SlimeBasic_00009.png" id="10_xtgsa"]
+[ext_resource type="Texture2D" uid="uid://3yauuhi7et0o" path="res://assets/enemies/green_slime/SlimeBasic_00010.png" id="11_ordo2"]
+[ext_resource type="Texture2D" uid="uid://du5o6at1xubtj" path="res://assets/enemies/green_slime/SlimeBasic_00011.png" id="12_nc3yg"]
+[ext_resource type="Texture2D" uid="uid://dw5lkq5xf6nha" path="res://assets/enemies/green_slime/SlimeBasic_00012.png" id="13_piwv7"]
+[ext_resource type="Texture2D" uid="uid://c8k3cwo8ent0o" path="res://assets/enemies/green_slime/SlimeBasic_00013.png" id="14_yrbpm"]
+[ext_resource type="Texture2D" uid="uid://cqmbjpfv3hwve" path="res://assets/enemies/green_slime/SlimeBasic_00014.png" id="15_vjtm5"]
+[ext_resource type="Texture2D" uid="uid://cyufw83ev4ji2" path="res://assets/enemies/green_slime/SlimeBasic_00015.png" id="16_60auh"]
+[ext_resource type="Texture2D" uid="uid://dk6wq8x4lkd7i" path="res://assets/enemies/green_slime/SlimeBasic_00016.png" id="17_k4kwy"]
+[ext_resource type="Texture2D" uid="uid://bwktvq8os8k13" path="res://assets/enemies/green_slime/SlimeBasic_00017.png" id="18_s46qi"]
+[ext_resource type="Texture2D" uid="uid://hof0vn32fgu5" path="res://assets/enemies/green_slime/SlimeBasic_00018.png" id="19_qgg8s"]
+[ext_resource type="Texture2D" uid="uid://dmddl7y7t2wiv" path="res://assets/enemies/green_slime/SlimeBasic_00019.png" id="20_11qdy"]
+[ext_resource type="Texture2D" uid="uid://b8x13co3jwr7m" path="res://assets/enemies/green_slime/SlimeBasic_00020.png" id="21_1ksxr"]
+[ext_resource type="Texture2D" uid="uid://csmwwss5nxqax" path="res://assets/enemies/green_slime/SlimeBasic_00021.png" id="22_vlfb4"]
+[ext_resource type="Texture2D" uid="uid://bal57rpnjw1x" path="res://assets/enemies/green_slime/SlimeBasic_00022.png" id="23_v8wn4"]
+[ext_resource type="Texture2D" uid="uid://cpn3dtmhs28oq" path="res://assets/enemies/green_slime/SlimeBasic_00023.png" id="24_f40br"]
+[ext_resource type="Texture2D" uid="uid://mlrotnqhnlni" path="res://assets/enemies/green_slime/SlimeBasic_00024.png" id="25_trjba"]
+[ext_resource type="Texture2D" uid="uid://dg355l56igjxb" path="res://assets/enemies/green_slime/SlimeBasic_00025.png" id="26_0o4jw"]
+[ext_resource type="Texture2D" uid="uid://ca8f4n40s0cdq" path="res://assets/enemies/green_slime/SlimeBasic_00026.png" id="27_h4o0y"]
+[ext_resource type="Texture2D" uid="uid://mfwtyfuk00vf" path="res://assets/enemies/green_slime/SlimeBasic_00027.png" id="28_ws6qx"]
+[ext_resource type="Texture2D" uid="uid://c13q6fghd4mp5" path="res://assets/enemies/green_slime/SlimeBasic_00028.png" id="29_554qn"]
+[ext_resource type="Texture2D" uid="uid://bu2ss3otwqh0" path="res://assets/enemies/green_slime/SlimeBasic_00029.png" id="30_px7e0"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pw3b1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_k6efq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_s0u8x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_5ni7c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_hyq7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_v0nt6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_m38qm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_hhdu6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_grn3n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_e6l8c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_xtgsa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ordo2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_nc3yg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_piwv7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_yrbpm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_vjtm5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_60auh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_k4kwy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_s46qi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_qgg8s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_11qdy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_1ksxr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_vlfb4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_v8wn4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_f40br")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_trjba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_0o4jw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_h4o0y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_ws6qx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_554qn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_px7e0")
+}],
+"loop": true,
+"name": &"wandering",
+"speed": 15.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6kdty"]
+size = Vector2(2000, 500)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m5a7k"]
+size = Vector2(1300, 300)
+
+[node name="GreenSlime" type="CharacterBody2D"]
+scale = Vector2(0.3, 0.3)
+collision_layer = 4
+collision_mask = 7
+script = ExtResource("1_lp52r")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, -1)
+scale = Vector2(0.9, 0.9)
+sprite_frames = SubResource("SpriteFrames_pw3b1")
+animation = &"wandering"
+metadata/_edit_lock_ = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(0, 128)
+polygon = PackedVector2Array(-1, -30, 77, -31, 120, -61, 133, -97, 120, -152, 80, -201, -1, -227, -73, -208, -117, -157, -134, -99, -112, -60, -68, -32)
+metadata/_edit_lock_ = true
+
+[node name="TimerWandering" type="Timer" parent="."]
+one_shot = true
+
+[node name="TimerIdle" type="Timer" parent="."]
+one_shot = true
+
+[node name="ExitArea" type="Area2D" parent="."]
+visible = false
+collision_layer = 4
+collision_mask = 2
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExitArea"]
+shape = SubResource("RectangleShape2D_6kdty")
+metadata/_edit_lock_ = true
+
+[node name="DetectedArea" type="Area2D" parent="."]
+visible = false
+collision_layer = 4
+collision_mask = 2
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectedArea"]
+shape = SubResource("RectangleShape2D_m5a7k")
+metadata/_edit_lock_ = true
+
+[node name="RayCastLDown" type="RayCast2D" parent="."]
+position = Vector2(-130, 30)
+target_position = Vector2(0, 150)
+metadata/_edit_lock_ = true
+
+[node name="RayCastRDown" type="RayCast2D" parent="."]
+position = Vector2(130, 30)
+target_position = Vector2(0, 150)
+metadata/_edit_lock_ = true
+
+[node name="RayCastL" type="RayCast2D" parent="."]
+position = Vector2(-130, 30)
+rotation = 1.5708
+target_position = Vector2(0, 30)
+collision_mask = 5
+metadata/_edit_lock_ = true
+
+[node name="RayCastR" type="RayCast2D" parent="."]
+position = Vector2(130, 30)
+rotation = -1.5708
+target_position = Vector2(0, 30)
+collision_mask = 5
+metadata/_edit_lock_ = true
+
+[connection signal="timeout" from="TimerWandering" to="." method="_on_timer_wandering_timeout"]
+[connection signal="timeout" from="TimerIdle" to="." method="_on_timer_idle_timeout"]
+[connection signal="body_exited" from="ExitArea" to="." method="_on_exit_area_body_exited"]
+[connection signal="body_entered" from="DetectedArea" to="." method="_on_detected_area_body_entered"]
