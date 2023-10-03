@@ -1,0 +1,155 @@
+[gd_scene load_steps=20 format=3 uid="uid://pks7pmm3ck81"]
+
+[ext_resource type="Script" path="res://player/water_ball/water_ball.gd" id="1_3vp4r"]
+[ext_resource type="Texture2D" uid="uid://dxk8c5nsji4e4" path="res://assets/player/water_ball/water_ball.png" id="1_cg02q"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ngr61"]
+atlas = ExtResource("1_cg02q")
+region = Rect2(0, 384, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4nahg"]
+atlas = ExtResource("1_cg02q")
+region = Rect2(192, 384, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5eblk"]
+atlas = ExtResource("1_cg02q")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ru8p"]
+atlas = ExtResource("1_cg02q")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gj4gb"]
+atlas = ExtResource("1_cg02q")
+region = Rect2(0, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7uuj0"]
+atlas = ExtResource("1_cg02q")
+region = Rect2(192, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8npq3"]
+atlas = ExtResource("1_cg02q")
+region = Rect2(384, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_35nfj"]
+atlas = ExtResource("1_cg02q")
+region = Rect2(576, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lgyqe"]
+atlas = ExtResource("1_cg02q")
+region = Rect2(768, 192, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gjl18"]
+atlas = ExtResource("1_cg02q")
+region = Rect2(0, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eocsv"]
+atlas = ExtResource("1_cg02q")
+region = Rect2(192, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ojthi"]
+atlas = ExtResource("1_cg02q")
+region = Rect2(384, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u3ri5"]
+atlas = ExtResource("1_cg02q")
+region = Rect2(576, 0, 192, 192)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aqdb8"]
+atlas = ExtResource("1_cg02q")
+region = Rect2(768, 0, 192, 192)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vpmio"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ngr61")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4nahg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5eblk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ru8p")
+}],
+"loop": false,
+"name": &"explosion",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gj4gb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7uuj0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8npq3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_35nfj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lgyqe")
+}],
+"loop": true,
+"name": &"move",
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gjl18")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eocsv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ojthi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u3ri5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aqdb8")
+}],
+"loop": false,
+"name": &"start",
+"speed": 25.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3bn5c"]
+radius = 35.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jdl4g"]
+radius = 36.0
+
+[node name="WaterBall" type="CharacterBody2D"]
+scale = Vector2(0.6, 0.6)
+collision_layer = 8
+collision_mask = 0
+script = ExtResource("1_3vp4r")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_vpmio")
+animation = &"explosion"
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-33.3333, 0)
+shape = SubResource("CircleShape2D_3bn5c")
+metadata/_edit_lock_ = true
+
+[node name="ExplodeArea" type="Area2D" parent="."]
+collision_layer = 8
+collision_mask = 5
+metadata/_edit_lock_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ExplodeArea"]
+position = Vector2(-41.6667, 0)
+shape = SubResource("CircleShape2D_jdl4g")
+metadata/_edit_lock_ = true
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite__animation_finished"]
+[connection signal="body_entered" from="ExplodeArea" to="." method="_on_explode_area_body_entered"]

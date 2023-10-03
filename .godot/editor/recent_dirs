@@ -1,3 +1,5 @@
+res://assets/player/water_ball
+res://player/water_ball
 res://enemies/orange_slime
 res://assets/enemies/orange_slime
 res://assets/enemies/green_slime
@@ -18,6 +20,4 @@ res://decorations/branch_2
 res://decorations/branch_1
 res://decorations/stone_3
 res://decorations/stone_2
-res://decorations/stone_1
-res://assets/location/animated_plants/BlueFlower2
 C:/Users/Владимир/source/repos/SomeGame/assets/location/tileset

@@ -25,9 +25,9 @@ func _physics_process(delta: float):
 	move_and_slide()
 	
 	
-	
 func normal_move_test() -> void:
 	velocity.y = GRAVITY
+	up_direction = Vector2.UP
 	
 	if Input.is_action_pressed("left") and animated_sprite.animation != "dash":
 		animated_sprite.flip_h = true
@@ -43,7 +43,9 @@ func normal_move_test() -> void:
 		velocity.x = 0
 		animated_sprite.play("idle")
 		
-	up_direction = Vector2.UP
+	if $RayCastUp.is_colliding():
+			jump_velocity = 0
+			velocity.y = GRAVITY
 		
 		
 func dash_move_test() -> void:
@@ -74,10 +76,6 @@ func jump_move_test(delta: float) -> void:
 		
 		if velocity.y <= 0:
 			animated_sprite.play("jump")
-		
-		if $RayCastUp.is_colliding():
-			jump_velocity = 0
-			velocity.y = GRAVITY
 
 
 func _is_animation_finished():
@@ -87,3 +85,11 @@ func _is_animation_finished():
 			animated_sprite.play("idle")
 		else:
 			animated_sprite.play("jump")
+		
+		
+		
+		
+		
+		
+		
+		

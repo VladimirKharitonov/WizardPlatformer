@@ -139,7 +139,7 @@ size = Vector2(1300, 300)
 [node name="GreenSlime" type="CharacterBody2D"]
 scale = Vector2(0.3, 0.3)
 collision_layer = 4
-collision_mask = 7
+collision_mask = 15
 script = ExtResource("1_lp52r")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
