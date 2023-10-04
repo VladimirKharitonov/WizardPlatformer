@@ -3,11 +3,17 @@ extends Node2D
 
 @onready var water_balls := $WaterBalls
 @onready var player      := $Player
+@onready var timer_throw := $Player/TimerThrow
+
+var is_time_out := true
 
 
 func _physics_process(delta: float):
-	if Input.is_action_just_released("left_click"):
-		throw_water_ball()
+	if is_time_out:
+		if Input.is_action_just_released("left_click"):
+			timer_throw.start()
+			is_time_out = false
+			throw_water_ball()
 
 
 func throw_water_ball():
@@ -17,3 +23,10 @@ func throw_water_ball():
 	var direction = (get_global_mouse_position() - player.global_position).normalized()
 	water_ball.set_target(player)
 	water_ball.throw(player.global_position, direction)
+	
+	
+
+
+
+func _on_timer_throw_timeout():
+	is_time_out = true

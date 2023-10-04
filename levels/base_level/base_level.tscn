@@ -496,9 +496,15 @@ rotation_smoothing_enabled = true
 rotation_smoothing_speed = 4.0
 metadata/_edit_lock_ = true
 
+[node name="TimerThrow" type="Timer" parent="Player"]
+wait_time = 0.5
+one_shot = true
+
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(0.125, 0.125)
 tile_set = SubResource("TileSet_aduq1")
 format = 2
 
 [node name="WaterBalls" type="Node2D" parent="."]
+
+[connection signal="timeout" from="Player/TimerThrow" to="." method="_on_timer_throw_timeout"]

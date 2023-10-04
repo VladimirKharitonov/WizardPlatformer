@@ -1,10 +1,8 @@
-res://player/player.tscn
-res://player/player.gd
 res://menus/main_menu/main_menu.tscn
 res://levels/base_level/base_level.tscn
 res://levels/level_1/level_1.tscn
 res://enemies/green_slime/green_slime.tscn
 res://enemies/orange_slime/orange_slime.tscn
+res://player/player.tscn
 res://player/water_ball/water_ball.tscn
-res://player/water_ball/water_ball.gd
 res://levels/base_level/base_level.gd
